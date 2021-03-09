@@ -16,7 +16,6 @@ const stylecss= `
     align-items: center;
 }
 
-
 .dog{
     width: 20.5vmax;
     height: 8.25vmax;
@@ -41,13 +40,7 @@ const stylecss= `
     z-index: -5;
 }
 
-@keyframes shadow {
-    0%, 10%, 20%, 26%, 28%, 30%, 84%, 100% {
-        width: 99%; }
-    5%, 15%, 22%, 24% {
-        width: 101%; }
-    34%, 81% {
-        width: 96%; } }
+
 
 .paws {
     width: 20vmax;
@@ -73,8 +66,6 @@ const stylecss= `
     right: 0;
     top: -1.1vmax;
     background: #ff8b56;
-
-
 }
 .back_top {
     width: 3.75vmax;
@@ -83,7 +74,6 @@ const stylecss= `
     right: 1.5vmax;
     top: 0.6vmax;
     background: #d7dbd2;
-
 }
 .top1{
     border-radius: 100px 100px 0 0;
@@ -102,14 +92,11 @@ const stylecss= `
     z-index: -1;
 
 }
-
-
 .front_leg{
     position: relative;
     z-index: 2;
 }
 .front_paw{
-
     width: 2.625vmax;
     height: 4.5vmax;
     transform: rotate(75deg);
@@ -132,7 +119,6 @@ const stylecss= `
     border-radius: 100px 100px 0 0;
     height: 2.3vmax;
 }
-
 .all_head{
     position: absolute;
     animation: head 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
@@ -147,33 +133,8 @@ const stylecss= `
     z-index: 100;
 
 }
-@keyframes head {
 
-    0%,10%,20%,26%,28%,90%,100%{
-        height: 8.25vmax;
-        bottom: 0;
-        transform-origin: bottom right;
-        transform: rotateZ(0);
-    }
-    5%,15%,22%,24%,30%{
-        height: 8.1vmax;
-    }
-    32%,50%{
-        height: 8.25vmax;
-    }
-    55%,60%{
-        bottom: 0.75vmax;
-        transform-origin: bottom right;
-        transform: rotateZ(0);
-    }
-    70%,80% {
-        bottom: 0.75vmax;
-        transform-origin: bottom right;
-        transform: rotateZ(10deg);
-    }
-}
 .snout{
-
     width: 7.5vmax;
     height: 3.75vmax;
     border-radius: 0 3vmax  3vmax 5vmax;
@@ -181,7 +142,6 @@ const stylecss= `
     top: 4.9vmax;
     right: 2vmax;
     background: #d7dbd2;
-
 }
 .snout::before{
         content: '';
@@ -192,21 +152,10 @@ const stylecss= `
         background: #1c3130;
          top: -0.1vmax;
     animation: snout 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-
 }
 
-@keyframes snout {
-    0%, 10%, 20%, 26%, 28%, 98%, 100% {
-        width: 1.875vmax;
-    }
-    5%, 15%, 22%, 24% {
-        width: 1.8vmax; }
-    34%, 98% {
-        width: 1.275vmax; }
-}
 
 .nose {
-
     width: 0.75vmax;
     height: 2.4vmax;
     border-radius: 3vmax;
@@ -215,7 +164,6 @@ const stylecss= `
     top: -2vmax;
     background: #d7dbd2;
 }
-
 .eyes{
     position: relative;
 }
@@ -239,25 +187,9 @@ const stylecss= `
 
 }
 
-@keyframes eye  {
-    0%, 30% {
-        width: 0.675vmax;
-        height: 0.3vmax; }
-
-    32%, 59%, 90%, 100% {
-        width: 0.525vmax;
-        height: 0.525vmax;
-        transform: translateY(0); }
-    60%, 75% {
-        transform: translateY(-0.3vmax); }
-    80%, 85% {
-        transform: translateY(0.15vmax); }
-}
-
 
 .head-ear {
     position: absolute;
-
 }
 
 .right_ear{
@@ -271,23 +203,7 @@ const stylecss= `
     left: 0;
     background: #e26538;
     animation: right_ear 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-
 }
-@keyframes right_ear {
-    0%, 10%, 20%, 26%, 28% {
-        transform: rotateZ(-60deg); }
-    5%, 15%, 22%, 24% {
-        transform: rotateZ(-58deg); }
-    30%, 31% {
-        transform: rotateZ(-50deg); }
-    32% {
-        transform: rotateZ(-65deg);
-    }
-    /*70%,80% {*/
-    /*    transform: rotateZ(-80deg);*/
-    /*}*/
-}
-
 
 
 .left_ear{
@@ -306,21 +222,8 @@ const stylecss= `
 
 
 
-@keyframes left_ear {
-
-    0%, 10%, 20%, 26%, 28%, 82%, 100% {
-        transform: rotateZ(40deg); }
-    5%, 15%, 22%, 24% {
-        transform: rotateZ(38deg); }
-    30%, 31% {
-        transform: rotateZ(30deg); }
-    32%, 80% {
-        transform: rotateZ(50deg); }
-}
-
 .dog_body{
     position: relative;
-
 }
 .tail{
     width: 4.5vmax;
@@ -332,7 +235,86 @@ const stylecss= `
     top: 0.8vmax;
     background: #e96839;
 }
+@keyframes shadow {
+    0%, 10%, 20%, 26%, 28%, 30%, 84%, 100% {
+        width: 99%; }
+    5%, 15%, 22%, 24% {
+        width: 101%; }
+    34%, 81% {
+        width: 96%; } 
+        }
+        
+        @keyframes head {
+    0%,10%,20%,26%,28%,90%,100%{
+        height: 8.25vmax;
+        bottom: 0;
+        transform-origin: bottom right;
+        transform: rotateZ(0);
+    }
+    5%,15%,22%,24%,30%{
+        height: 8.1vmax;
+    }
+    32%,50%{
+        height: 8.25vmax;
+    }
+    55%,60%{
+        bottom: 0.75vmax;
+        transform-origin: bottom right;
+        transform: rotateZ(0);
+    }
+    70%,80% {
+        bottom: 0.75vmax;
+        transform-origin: bottom right;
+        transform: rotateZ(10deg);
+    }
+}
 
+@keyframes snout {
+    0%, 10%, 20%, 26%, 28%, 98%, 100% {
+        width: 1.875vmax;
+    }
+    5%, 15%, 22%, 24% {
+        width: 1.8vmax; }
+    34%, 98% {
+        width: 1.275vmax; }
+}
+
+@keyframes eye  {
+    0%, 30% {
+        width: 0.675vmax;
+        height: 0.3vmax; }
+
+    32%, 59%, 90%, 100% {
+        width: 0.525vmax;
+        height: 0.525vmax;
+        transform: translateY(0); }
+    60%, 75% {
+        transform: translateY(-0.3vmax); }
+    80%, 85% {
+        transform: translateY(0.15vmax); }
+}
+
+@keyframes right_ear {
+    0%, 10%, 20%, 26%, 28% {
+        transform: rotateZ(-60deg); }
+    5%, 15%, 22%, 24% {
+        transform: rotateZ(-58deg); }
+    30%, 31% {
+        transform: rotateZ(-50deg); }
+    32% {
+        transform: rotateZ(-65deg);
+    }
+   
+}
+@keyframes left_ear {
+    0%, 10%, 20%, 26%, 28%, 82%, 100% {
+        transform: rotateZ(40deg); }
+    5%, 15%, 22%, 24% {
+        transform: rotateZ(38deg); }
+    30%, 31% {
+        transform: rotateZ(30deg); }
+    32%, 80% {
+        transform: rotateZ(50deg); }
+}
 `
-
 export  default stylecss;
