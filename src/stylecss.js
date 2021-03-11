@@ -15,7 +15,7 @@ const stylecss= `
     justify-content: center;
     align-items: center;
 }
-
+   /* 先画一个身子*/
 .dog{
     width: 20.5vmax;
     height: 8.25vmax;
@@ -24,7 +24,6 @@ const stylecss= `
     border-top-left-radius: 3vmax;
     border-bottom-left-radius: 5vmax;
     background: #ff702e;
-
 
 }
 .dog::before{
@@ -40,7 +39,7 @@ const stylecss= `
     z-index: -5;
 }
 
-
+/* 接着画爪子*/
 
 .paws {
     width: 20vmax;
@@ -52,7 +51,7 @@ const stylecss= `
     top: 6.5vmax;
 
 }
-
+/* 这是我的后腿*/
 .back_leg{
     position: relative;
     z-index: 2;
@@ -92,6 +91,7 @@ const stylecss= `
     z-index: -1;
 
 }
+/* 这是我的前腿*/
 .front_leg{
     position: relative;
     z-index: 2;
@@ -119,6 +119,7 @@ const stylecss= `
     border-radius: 100px 100px 0 0;
     height: 2.3vmax;
 }
+/* 我的头出来了*/
 .all_head{
     position: absolute;
     animation: head 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
@@ -154,7 +155,7 @@ const stylecss= `
     animation: snout 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-
+/* 还有我的鼻子*/
 .nose {
     width: 0.75vmax;
     height: 2.4vmax;
@@ -164,6 +165,7 @@ const stylecss= `
     top: -2vmax;
     background: #d7dbd2;
 }
+/*我的眼睛还会动哦*/
 .eyes{
     position: relative;
 }
@@ -191,7 +193,7 @@ const stylecss= `
 .head-ear {
     position: absolute;
 }
-
+/* 我的右耳朵出来了*/
 .right_ear{
     width: 10.5vmax;
     height: 3.375vmax;
@@ -204,8 +206,7 @@ const stylecss= `
     background: #e26538;
     animation: right_ear 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
-
-
+/* 我的左耳朵出来了*/
 .left_ear{
     width: 10.5vmax;
     height: 3.375vmax;
@@ -219,8 +220,6 @@ const stylecss= `
     background: #e26538;
     animation:  left_ear 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite ;
 }
-
-
 
 .dog_body{
     position: relative;
@@ -243,7 +242,7 @@ const stylecss= `
     34%, 81% {
         width: 96%; } 
         }
-        
+        /* 动动头*/
         @keyframes head {
     0%,10%,20%,26%,28%,90%,100%{
         height: 8.25vmax;
@@ -278,7 +277,7 @@ const stylecss= `
     34%, 98% {
         width: 1.275vmax; }
 }
-
+/* 动动眼睛*/
 @keyframes eye  {
     0%, 30% {
         width: 0.675vmax;
@@ -293,7 +292,7 @@ const stylecss= `
     80%, 85% {
         transform: translateY(0.15vmax); }
 }
-
+/* 动动耳朵*/
 @keyframes right_ear {
     0%, 10%, 20%, 26%, 28% {
         transform: rotateZ(-60deg); }
