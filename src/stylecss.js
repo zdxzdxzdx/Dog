@@ -1,5 +1,6 @@
 
 const stylecss= `
+ /* 我是一只可爱的小狗*/
 #html {
     width: 100%;
     height: 100vh;
@@ -134,7 +135,7 @@ const stylecss= `
     z-index: 100;
 
 }
-
+/* 我的嘴巴 */
 .snout{
     width: 7.5vmax;
     height: 3.75vmax;
@@ -224,6 +225,7 @@ const stylecss= `
 .dog_body{
     position: relative;
 }
+/* 我的尾巴出来了*/
 .tail{
     width: 4.5vmax;
     height: 1.5vmax;
@@ -242,7 +244,7 @@ const stylecss= `
     34%, 81% {
         width: 96%; } 
         }
-        /* 动动头*/
+        /* 我的头要归位了*/
         @keyframes head {
     0%,10%,20%,26%,28%,90%,100%{
         height: 8.25vmax;
